@@ -1,0 +1,16 @@
+{
+  "name": "my-lib-b",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/my-lib-b/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/my-lib-b/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}
