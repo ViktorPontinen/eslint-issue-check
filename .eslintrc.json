@@ -17,6 +17,10 @@
   },
   "overrides": [
     {
+      "files": ["libs/my-lib-a/**/*.{ts,tsx}"],
+      "extends": ["airbnb", "airbnb-typescript"]
+    },
+    {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
         "@nx/enforce-module-boundaries": [
@@ -43,10 +47,6 @@
       "files": ["*.js", "*.jsx"],
       "extends": ["plugin:@nx/javascript"],
       "rules": {}
-    },
-    {
-      "files": ["libs/my-lib-a/**/*.{ts,tsx}"],
-      "extends": ["airbnb", "airbnb-typescript"]
     }
   ]
 }
